@@ -1,0 +1,29 @@
+{
+    "name": "ulow/phpci-stash-build",
+    "description": "PHPCI Plugin for Atlassian Bitbucket Server (Stash) build status integration",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vitalijs Litvinovs",
+            "email": "vitalijs.litvinovs@transactpro.lv"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+	    "TransactPro\\PHPCI\\StashBuild\\": "src"
+        }
+    },
+    "extra": {
+        "phpci": {
+	    "pluginNamespace": "TransactPro\\PHPCI\\Plugins",
+	    "suppliedPlugins": [
+	        {
+		    "name": "StashBuild",
+		    "class": "StashBuildPlugin"
+		}
+	    ]
+	}
+    }
+}
