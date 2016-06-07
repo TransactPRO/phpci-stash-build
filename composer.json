@@ -12,16 +12,16 @@
     "require": {},
     "autoload": {
         "psr-4": {
-	    "TransactPro\\PHPCI\\StashBuild\\": "src"
+	    "PHPCI\\Plugin\\": "src"
         }
     },
     "extra": {
         "phpci": {
-	    "pluginNamespace": "TransactPro\\PHPCI\\StashBuild\\",
+	    "pluginNamespace": "PHPCI\\Plugin\\",
 	    "suppliedPlugins": [
 	        {
 		    "name": "stash_build",
-		    "class": "StashBuildPlugin"
+		    "class": "StashBuild"
 		}
 	    ]
 	}
