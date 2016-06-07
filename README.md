@@ -1,4 +1,7 @@
-#### PHPCI Plugin for Atlassian Bitbucket Server (Stash) build status integration
+###PHPCI Plugin for Atlassian Bitbucket Server (Stash) build status integration
+
+[![Latest Version](https://img.shields.io/packagist/v/transactpro/phpci-stash-build.svg?style=flat-square)](https://github.com/transactpro/phpci-stash-build/releases)
+[![Total Downloads](https://img.shields.io/packagist/dt/transactpro/phpci-stash-build.svg?style=flat-square)](https://packagist.org/packages/transactpro/phpci-stash-build)
 
 ## Install
 First of all - `composer require transactpro/phpci-stash-build`
