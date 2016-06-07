@@ -13,7 +13,10 @@
     "autoload": {
         "psr-4": {
 	    "PHPCI\\Plugin\\": "src/"
-        }
+        },
+	"classmap": {
+	    "src/StashBuild.php"
+	}
     },
     "extra": {
         "phpci": {
