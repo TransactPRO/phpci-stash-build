@@ -80,15 +80,22 @@ class StashBuild implements \PHPCI\Plugin
         ]);
 
         if (null === $this->authToken) {
-            $authHeaders = $this->buildParams(['u' => [
-                $this->login => $this->password
-            ], 'H' => ["Content-Type" => "application/json"]]);
+            $authHeaders = $this->buildParams([
+                'u' => [
+                    $this->login => $this->password
+                ], 
+                'H' => [
+                    "Content-Type" => "application/json"
+                ]
+            ]);
         } else {
-            $authHeaders = $this->buildParams(['H' => [
-                'X-Auth-User'  => $this->authUser,
-                'X-Auth-Token' => $this->authToken,
-		'Content-Type' => "application/json"
-            ]]);
+            $authHeaders = $this->buildParams([
+                'H' => [
+                    'X-Auth-User'  => $this->authUser,
+                    'X-Auth-Token' => $this->authToken,
+	            'Content-Type' => "application/json"
+                ]
+            ]);
         }
 
         $result = $this->makeCurlPost($url, $authHeaders, $buildStatus);
@@ -107,13 +114,11 @@ class StashBuild implements \PHPCI\Plugin
         return $paramString;
     }
 
-    private function makeCurlPost($url, $params, $data){
-        return $this->phpci->executeCommand(
-            $this->phpci->interpolate(
-                "curl -s " . $params 
-                . " -X POST " . $url 
-                . ' -d "' . addslashes($data) . '"'
-            )
-        );
+    private function makeCurlPost($url, $params, $data)
+    {
+    	$cmd = sprintf('curl -s %s -X POST %s -d "%s"', $params, $url, addslashes($data));
+    	$interpolatedCommand = $this->phpci->interpolate($cmd);
+    	
+        return $this->phpci->executeCommand($interpolatedCommand);
     }
 }
