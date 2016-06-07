@@ -17,7 +17,7 @@
     },
     "extra": {
         "phpci": {
-	    "pluginNamespace": "TransactPro\\PHPCI\\Plugins",
+	    "pluginNamespace": "TransactPro\\PHPCI\\StashBuild\\",
 	    "suppliedPlugins": [
 	        {
 		    "name": "stash_build",

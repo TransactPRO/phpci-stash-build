@@ -7,7 +7,7 @@
  * @link         https://www.phptesting.org/
  */
 
-namespace PHPCI\Plugin;
+namespace TransactPro\PHPCI\StashBuild;
 
 use PHPCI\Builder;
 use PHPCI\Helper\Lang;
