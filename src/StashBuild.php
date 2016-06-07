@@ -82,11 +82,12 @@ class StashBuild implements \PHPCI\Plugin
         if (null === $this->authToken) {
             $authHeaders = $this->buildParams(['u' => [
                 $this->login => $this->password
-            ]]);
+            ], 'H' => ["Content-Type" => "application/json"]]);
         } else {
             $authHeaders = $this->buildParams(['H' => [
                 'X-Auth-User'  => $this->authUser,
-                'X-Auth-Token' => $this->authToken
+                'X-Auth-Token' => $this->authToken,
+		'Content-Type' => "application/json"
             ]]);
         }
 
