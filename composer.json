@@ -12,7 +12,7 @@
     "require": {},
     "autoload": {
         "psr-4": {
-	    "PHPCI\\Plugin\\": "src"
+	    "PHPCI\\Plugin\\": "src/"
         }
     },
     "extra": {
@@ -20,7 +20,7 @@
 	    "pluginNamespace": "PHPCI\\Plugin\\",
 	    "suppliedPlugins": [
 	        {
-		    "name": "stash_build",
+		    "name": "StashBuild",
 		    "class": "StashBuild"
 		}
 	    ]
