@@ -14,9 +14,9 @@
         "psr-4": {
 	    "PHPCI\\Plugin\\": "src/"
         },
-	"classmap": {
+	"classmap": [ 
 	    "src/StashBuild.php"
-	}
+	]
     },
     "extra": {
         "phpci": {
