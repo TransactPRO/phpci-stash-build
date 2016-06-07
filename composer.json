@@ -20,7 +20,7 @@
 	    "pluginNamespace": "TransactPro\\PHPCI\\Plugins",
 	    "suppliedPlugins": [
 	        {
-		    "name": "StashBuild",
+		    "name": "stash_build",
 		    "class": "StashBuildPlugin"
 		}
 	    ]
