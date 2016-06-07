@@ -112,7 +112,7 @@ class StashBuild implements \PHPCI\Plugin
             $this->phpci->interpolate(
                 "curl -s " . $params 
                 . " -X POST " . $url 
-                . " -d '" . addslashes($data) . "'"
+                . ' -d "' . addslashes($data) . '"'
             )
         );
     }
