@@ -1,5 +1,5 @@
 {
-    "name": "ulow/phpci-stash-build",
+    "name": "transactpro/phpci-stash-build",
     "description": "PHPCI Plugin for Atlassian Bitbucket Server (Stash) build status integration",
     "type": "library",
     "license": "MIT",
