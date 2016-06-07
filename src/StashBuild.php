@@ -7,7 +7,7 @@
  * @link         https://www.phptesting.org/
  */
 
-namespace TransactPro\PHPCI\StashBuild;
+namespace PHPCI\Plugin;
 
 use PHPCI\Builder;
 use PHPCI\Helper\Lang;
@@ -20,7 +20,7 @@ use b8\Config;
  * @package      PHPCI
  * @subpackage   Plugins
  */
-class StashBuildPlugin implements \PHPCI\Plugin
+class StashBuild implements \PHPCI\Plugin
 {
     private $authUser = null;
     private $authToken = null;
