@@ -1,6 +1,8 @@
 #### PHPCI Plugin for Atlassian Bitbucket Server (Stash) build status integration
 
 ## Install
+First of all - `composer require transactpro/phpci-stash-build`
+
 There are two ways this plugin can work - tokens and login/password.
 
 Add settings from below to your PHPCI config (`/path/to/phpci/PHPCI/config.yml`):
