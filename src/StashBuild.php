@@ -46,8 +46,6 @@ class StashBuild implements \PHPCI\Plugin
         $this->userAgent = "PHPCI/1.0 (+http://www.phptesting.org/)";
         $this->cookie = "phpcicookie";
 
-        $buildSettings = $phpci->getConfig('build_settings');
-
         if (isset($pluginConfig['auth_token'], $pluginConfig['auth_user'])) {
             $this->authUser = $pluginConfig['auth_user'];
             $this->authToken = $pluginConfig['auth_token'];
