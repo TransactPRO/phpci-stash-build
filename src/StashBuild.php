@@ -12,7 +12,6 @@ namespace PHPCI\Plugin;
 use PHPCI\Builder;
 use PHPCI\Helper\Lang;
 use PHPCI\Model\Build;
-use b8\Config;
 
 /**
  * StashBuild Plugin
