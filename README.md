@@ -1,5 +1,7 @@
 ###PHPCI Plugin for Atlassian Bitbucket Server (Stash) build status integration
 
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/9e914e3d-c616-4a77-b001-00632c578e3d/big.png)](https://insight.sensiolabs.com/projects/9e914e3d-c616-4a77-b001-00632c578e3d)
+
 [![Latest Version](https://img.shields.io/packagist/v/transactpro/phpci-stash-build.svg?style=flat-square)](https://github.com/transactpro/phpci-stash-build/releases)
 [![Total Downloads](https://img.shields.io/packagist/dt/transactpro/phpci-stash-build.svg?style=flat-square)](https://packagist.org/packages/transactpro/phpci-stash-build)
 
