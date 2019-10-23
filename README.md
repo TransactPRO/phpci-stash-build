@@ -1,4 +1,4 @@
-###PHPCI Plugin for Atlassian Bitbucket Server (Stash) build status integration
+# PHPCI Plugin for Atlassian Bitbucket Server (Stash) build status integration
 
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/9e914e3d-c616-4a77-b001-00632c578e3d/big.png)](https://insight.sensiolabs.com/projects/9e914e3d-c616-4a77-b001-00632c578e3d)
 
@@ -15,7 +15,7 @@ There are two ways this plugin can work - tokens and login/password.
 
 Add settings from below to your PHPCI config (`/path/to/phpci/PHPCI/config.yml`):
 
-#####Login / password style:
+### Login / password style:
 ```yml
 stash_build:
     login: $STASH_USER
@@ -23,7 +23,7 @@ stash_build:
     url: 'https://$STASH_URL:$PORT'
 ```
 
-#####Token style:
+### Token style:
 It's very similar to login/password style, but you have to install [Token Authenticator](https://marketplace.atlassian.com/plugins/com.thundermoose.plugins.stash-token-auth/server/overview) to your Bitbucket Server (Stash), before you can continue.
 
 Add to your PHPCI config (`/path/to/phpci/PHPCI/config.yml`)
